@@ -36,7 +36,26 @@ body
     height: 150px
     width: auto
     padding: 0
+
+.menu .navbar
+    display: none
     
+.menu-icono
+    display: block
+    img
+        width: 30px
+        height: auto
+
+.menu label
+    cursor: pointer
+    display: block
+
+#menu
+    display: none
+
+#menu:checked~ .menu .navbar
+    display: flex
+    flex-direction: column
 
 .menu .navbar ul li
     position: relative
@@ -52,17 +71,6 @@ body
 .menu .navbar ul li a
     &:hover
         color: $hover-color
-
-
-#menu
-    display: none
-
-.menu-icono
-    width: 25px
-
-.menu label
-    cursor: pointer
-    display: none
 
 .banner
     position: relative
@@ -148,14 +156,13 @@ footer
             
 
         &.social-media-icons
-        display: flex
-        justify-content: center 
-        align-items: center 
+            display: flex
+            justify-content: center 
+            align-items: center 
 
         a
             margin-right: 10px 
            
-
             img
                 height: 30px 
                 width: auto
